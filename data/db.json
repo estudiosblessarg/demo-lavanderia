@@ -1,0 +1,41 @@
+{
+  "tenants": [
+    {
+      "id": "tenant1",
+      "name": "Lavandería Demo",
+      "users": [
+        {
+          "email": "test1@test.com"
+        }
+      ],
+      "clients": [
+        {
+          "id": 1,
+          "name": "Juan Perez",
+          "phone": "123456",
+          "status": "sucio"
+        },
+        {
+          "id": 2,
+          "name": "Maria Lopez",
+          "phone": "987654",
+          "status": "lavando"
+        }
+      ],
+      "orders": [
+        {
+          "id": 1,
+          "clientId": 1,
+          "service": "Lavado completo",
+          "status": "sucio"
+        },
+        {
+          "id": 2,
+          "clientId": 2,
+          "service": "Secado",
+          "status": "lavando"
+        }
+      ]
+    }
+  ]
+}

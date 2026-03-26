@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry SaaS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- LOGIN -->
+  <section id="login-view" class="view active">
+    <div class="login-container">
+      <h1>Laundry SaaS</h1>
+      <input type="email" id="email" placeholder="Email">
+      <button id="loginBtn">Ingresar</button>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard-view" class="view">
+    
+    <aside class="sidebar">
+      <h2>Panel</h2>
+      <button data-view="clientes">Clientes</button>
+      <button data-view="pedidos">Pedidos</button>
+    </aside>
+
+    <main id="main-content"></main>
+
+  </section>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <p id="modal-text"></p>
+    <button id="closeModal">Cerrar</button>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
