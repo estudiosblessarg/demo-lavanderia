@@ -8,7 +8,7 @@ let currentView = "dashboard";
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
-  const res = await fetch("../data/db.json");
+  const res = await fetch("../../data/db.json");
   DB = await res.json();
   bindEvents();
 }
